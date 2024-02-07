@@ -20,6 +20,9 @@ all: $(TARGETS)
 rtlsdr_ft8d: $(OBJS)
 	$(CC) -o $@ $^ $(LIBS)
 
+submodule:
+	git submodule update --init --recursive
+
 clean:
 	rm -f *.o ft8_lib/ft8/*.o $(TARGETS) fftw_wisdom.dat selftest.iq
 
