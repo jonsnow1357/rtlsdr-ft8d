@@ -1,4 +1,4 @@
-CC = clang
+#CC = clang
 CFLAGS= -O3 -std=gnu17
 LIBS = -lusb-1.0 -lrtlsdr -lpthread -lfftw3f -lcurl -lm
 
